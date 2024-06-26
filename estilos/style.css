@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background: url('../imagens/espaco-degrade.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -39,7 +39,7 @@ iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 471px;
 }
 
@@ -53,14 +53,15 @@ section#redes-sociais img {
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.485);
+    transition-duration: .5s;
+    opacity: 80%;
     box-sizing: border-box;
-}
-    
-section#redes-sociais img:active {
-    transform: scale(95%);
 }
 
 section#redes-sociais img:hover {
-    border: 1px solid rgba(255, 255, 255, 0.869);
-    transition: border 1s;
+    opacity: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.711);
+    transform: scale(1.2) translate(7px, 7px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 1s;
 }
